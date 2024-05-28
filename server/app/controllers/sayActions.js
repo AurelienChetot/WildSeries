@@ -1,7 +1,10 @@
-const saySeries = (req, res) => {
-  res.send("Welcome to Wild Series !");
+// Declare the action
+
+const sayWelcome = (req, res) => {
+  console.info(req.query);
+  res.send(`Welcome to Wild Series, ${req.query.name} !`);
 };
 
 // Export it to import it somewhere else
 
-module.exports = { saySeries };
+module.exports = { sayWelcome };
