@@ -7,12 +7,7 @@ class CategorySeeder extends AbstractSeeder {
   }
 
   run() {
-    const categories = [
-      { name: "Comédie" },
-      { name: "Science-Fiction" },
-      { name: "Policier" },
-      { name: "Horreur" },
-    ];
+    const categories = [{ name: "Comédie" }, { name: "Science-Fiction" }];
 
     categories.forEach((category) => {
       const categoryWithRefName = {
